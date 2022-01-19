@@ -1,0 +1,27 @@
+{
+    "id": "015529A6",
+    "path": "~/my_R/Project_3_ScrappingAnbima/Script-2-Tratamento-de-dados-do-Scapping.R",
+    "project_path": "Script-2-Tratamento-de-dados-do-Scapping.R",
+    "type": "r_source",
+    "hash": "2067953061",
+    "contents": "",
+    "dirty": false,
+    "created": 1642618432122.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "tempName": "Untitled1",
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "0,0",
+        "scrollLine": "0"
+    },
+    "folds": "0|35|1|35|\n",
+    "lastKnownWriteTime": 1642622647,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1642622647689,
+    "read_only": false,
+    "read_only_alternatives": []
+}

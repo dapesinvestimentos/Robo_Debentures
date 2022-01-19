@@ -1,0 +1,512 @@
+)
+#Abre o servidor
+remDr$open()
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+remDr$navigate(url)
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table()
+my_table <- my_table[[1]]
+my_table <- my_table %>%
+dplyr::mutate(ativo=ticker)
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+my_table
+}
+my_fct(ticker="ALGA15")
+rD <- rsDriver(port = 4812L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+library(RSelenium)
+library(rvest)
+library(magrittr)
+rD <- rsDriver(port = 4812L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+#Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port = 4812L,
+browserName = "chrome"
+)
+#Abre o servidor
+remDr$open()
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+ticker="ALGA15"
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+remDr$navigate(url)
+()
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+rD <- rsDriver(port = 4812L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+rD <- rsDriver(port = 4812L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+#Carregando o pacote
+library(RSelenium)
+library(rvest)
+library(magrittr)
+rD <- rsDriver(port = 4812L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+#Abre o servidor
+remDr$open()
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+ticker="ALGA15"
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+remDr$navigate(url)
+rD$navigate(url)
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+rD <- rsDriver(port = 4812L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+rD <- rsDriver(port = 4812L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+library(RSelenium)
+library(rvest)
+library(magrittr)
+rD <- rsDriver(port = 4812L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+# Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port = 4812L,
+browserName = "chrome"
+)
+#Abre o servidor
+remDr$open()
+ticker="ALGA15"
+# url
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+# rodar
+remDr$navigate(url1)
+# tabela
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table()
+# tabela
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table() %>%
+purrr::pluck(1) %>%
+dplyr::mutate(ativo=ticker)
+my_table
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+my_fct <- function(ticker){
+rD <- rsDriver(port = 4812L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+# Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port = 4812L,
+browserName = "chrome"
+)
+#Abre o servidor
+remDr$open()
+# url
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+# rodar
+remDr$navigate(url1)
+# tabela
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table() %>%
+purrr::pluck(1) %>%
+dplyr::mutate(ativo=ticker)
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+my_table
+}
+my_tickers <- read.csv("data2.csv")
+my_tickers
+my_tickers$ï..Ativo
+my_fct(ticker="AGRU12")
+my_fct <- function(ticker){
+rD <- rsDriver(port = 4837L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+# Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port = 4837L,
+browserName = "chrome"
+)
+#Abre o servidor
+remDr$open()
+# url
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+# rodar
+remDr$navigate(url1)
+# tabela
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table() %>%
+purrr::pluck(1) %>%
+dplyr::mutate(ativo=ticker)
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+my_table
+}
+my_fct(ticker="AGRU12")
+my_fct <- function(ticker){
+rD <- rsDriver(port = 4837L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+# Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port = 4837L,
+browserName = "chrome"
+)
+#Abre o servidor
+remDr$open()
+Sys.sleep(2)
+# url
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+Sys.sleep(2)
+# rodar
+remDr$navigate(url1)
+Sys.sleep(2)
+# tabela
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table() %>%
+purrr::pluck(1) %>%
+dplyr::mutate(ativo=ticker)
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+my_table
+}
+my_fct(ticker="AGRU12")
+my_fct <- function(ticker){
+rD <- rsDriver(port = 4838L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+# Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port = 4838L,
+browserName = "chrome"
+)
+#Abre o servidor
+remDr$open()
+Sys.sleep(2)
+# url
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+Sys.sleep(2)
+# rodar
+remDr$navigate(url1)
+Sys.sleep(2)
+# tabela
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table() %>%
+purrr::pluck(1) %>%
+dplyr::mutate(ativo=ticker)
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+my_table
+}
+my_fct(ticker="AGRU12")
+my_fct <- function(ticker){
+rD <- rsDriver(port = 4838L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+# Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port = 4838L,
+browserName = "chrome"
+)
+#Abre o servidor
+remDr$open()
+Sys.sleep(2)
+# url
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+Sys.sleep(2)
+# rodar
+remDr$navigate(url1)
+Sys.sleep(2)
+# tabela
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table() %>%
+purrr::pluck(1)
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+my_table
+}
+my_fct(ticker="AGRU12")
+my_fct <- function(ticker){
+rD <- rsDriver(port = 4836L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+# Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port =4836L,
+browserName = "chrome"
+)
+#Abre o servidor
+remDr$open()
+Sys.sleep(2)
+# url
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+Sys.sleep(2)
+# rodar
+remDr$navigate(url1)
+Sys.sleep(2)
+# tabela
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table() %>%
+purrr::pluck(1)
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+my_table
+}
+my_fct(ticker="AGRU12")
+my_fct <- function(ticker){
+rD <- rsDriver(port = 4836L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+# Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port =4836L,
+browserName = "chrome"
+)
+#Abre o servidor
+remDr$open()
+Sys.sleep(2)
+# url
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+Sys.sleep(2)
+# rodar
+remDr$navigate(url1)
+Sys.sleep(4)
+# tabela
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table() %>%
+purrr::pluck(1)
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+my_table
+}
+my_fct <- function(ticker){
+rD <- rsDriver(port = 4833L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+# Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port =4833L,
+browserName = "chrome"
+)
+#Abre o servidor
+remDr$open()
+Sys.sleep(2)
+# url
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+Sys.sleep(2)
+# rodar
+remDr$navigate(url1)
+Sys.sleep(4)
+# tabela
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table() %>%
+purrr::pluck(1)
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+my_table
+}
+my_fct(ticker="AGRU12")
+# Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port =4835L,
+browserName = "chrome"
+)
+rD <- rsDriver(port = 4835L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+# Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port =4835L,
+browserName = "chrome"
+)
+#Abre o servidor
+#remDr$open()
+# url
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+# rodar
+remDr$navigate(url1)
+#Abre o servidor
+remDr$open()
+# rodar
+remDr$navigate(url1)
+Sys.sleep(4)
+# tabela
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table() %>%
+purrr::pluck(1) %>%
+dplyr::mutate(ativo = ticker)
+my_table
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+my_fct <- function(ticker){
+rD <- rsDriver(port = 4834L,
+##Define a versão do Chrome que o Webdriver deve utilizar
+chromever = '97.0.4692.71',
+##Remove as informações do console
+verbose = F)
+# Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port =4834L,
+browserName = "chrome"
+)
+#Abre o servidor
+remDr$open()
+# url
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+# rodar
+remDr$navigate(url1)
+Sys.sleep(4)
+# tabela
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table() %>%
+purrr::pluck(1) %>%
+dplyr::mutate(ativo = ticker)
+#Fecha o driver
+remDr$close()
+#Para o servidor
+rD$server$stop()
+my_table
+}
+my_fct(ticker="AGRU12")
+View(my_table)
+View(my_tickers)
+View(my_table)
+my_fct <- function(ticker){
+# url
+url1 <- glue::glue("https://data.anbima.com.br/debentures/{ticker}/agenda")
+# rodar
+remDr$navigate(url1)
+Sys.sleep(4)
+# tabela
+my_table <- remDr$getPageSource()[[1]] %>%
+read_html() %>%
+html_table() %>%
+purrr::pluck(1) %>%
+dplyr::mutate(ativo = ticker)
+my_table
+}
+my_tickers$ï..Ativo
+my_fct(ticker="PARD12")
+# Cria o driver para usar o R
+remDr <- remoteDriver(
+remoteServerAddr = "localhost",
+port =4834L,
+browserName = "chrome"
+)
+#Abre o servidor
+remDr$open()
+my_fct(ticker="PARD12")
+View(my_table)
+my_fct(ticker="PARD12")
+View(my_table)
+View(my_table)
+my_table
+my_list <- my_tickers$ï..Ativo
+#Web Scrapping no site da Ambima para buscar os proventos de açoes
+# install.packages("rvest")
+# install.packages("janitor")
+# install.packages("glue")
+install.packages("purr")
+#Web Scrapping no site da Ambima para buscar os proventos de açoes
+# install.packages("rvest")
+# install.packages("janitor")
+# install.packages("glue")
+install.packages("purrr")
+#Web Scrapping no site da Ambima para buscar os proventos de açoes
+# install.packages("rvest")
+# install.packages("janitor")
+# install.packages("glue")
+install.packages("purrr")
